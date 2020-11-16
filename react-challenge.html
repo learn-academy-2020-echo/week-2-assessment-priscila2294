@@ -40,6 +40,7 @@ HINT: Check the console in the browser developer tools for errors. -->
 
         render(){
           return(
+            <>
               <h1>Welcome to the Mood Meter App</h1>
 
               <h3>Mood Options:</h3>
@@ -48,10 +49,14 @@ HINT: Check the console in the browser developer tools for errors. -->
                 { this.state.currentMood }
               </div>
 
-              <button onClick={ handleMoodOptions }>
+              <button onClick={ this.handleMoodOptions }>
                 Click Here For Next Mood option
               </button>
 
+              </>
+
+             
+            
           )
         }
       }
